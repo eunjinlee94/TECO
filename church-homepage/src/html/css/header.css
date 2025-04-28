@@ -1,0 +1,22 @@
+#header {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+#header .navbar {
+  margin: 0 auto;
+  height: 120px;
+  background: linear-gradient(180deg, #ffffff, transparent);
+}
+
+#header .navbar .logo {
+  font-family: "Klee One", "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#header .navbar .navbar-nav .nav-item a {
+  letter-spacing: -0.05rem;
+  font-weight: 600;
+}

@@ -1,0 +1,40 @@
+#index .hero-section {
+    position: relative;
+    height: 600px;
+}
+
+/*반응형*/
+@media (max-width: 1240px) {
+    #index .hero-section {
+        height: 400px;
+    }
+}
+
+#index .hero-section .container {
+    height: 100%;
+}
+
+#index .hero-section .text {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#index .hero-section .text p {
+    font-size: 2rem;
+}
+
+#index .hero-section .img {
+    width:  100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('../../images/main01_1.png') no-repeat center;
+    background-size: cover;
+}
