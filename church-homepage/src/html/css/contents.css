@@ -1,0 +1,39 @@
+.container.contents {
+    overflow: hidden;
+}
+
+#contents {
+    width: calc(100% - 400px);
+    float: left;
+}
+
+/*教会とは*/
+.church1 .title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.church1 article {
+    padding: 3rem 0;
+}
+
+.church1 article div {
+    color: #f76707;
+    font-size: 2rem;
+    font-family: "BIZ UDPMincho", "Noto Sans JP", sans-serif;
+    margin-bottom: 1rem;
+}
+
+.church1 article p {
+    font-size: 1.3rem;
+}
+
+.church1 .line {
+    width: 100%;
+    height: 1px;
+    background: #dee2e6;
+}
+
+.church2 {
+    font-size: 1.1rem;
+}

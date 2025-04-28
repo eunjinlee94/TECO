@@ -1,0 +1,26 @@
+#footer {
+    color: #fff;
+    margin-top: 4rem;
+    overflow: hidden;
+}
+
+#footer .tit {
+    margin: 2rem 0;
+    font-size: 1.3rem;
+}
+
+#footer span {
+    margin: 0 1rem;
+}
+
+#footer b {
+    margin-right: 0.5rem;
+}
+
+#footer a {
+    color: #dee2e6;
+}
+
+#footer .text {
+    font-size: 0.8rem;
+}
