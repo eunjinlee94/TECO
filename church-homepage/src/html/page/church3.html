@@ -27,102 +27,133 @@
     </div>
 </div>
 
-<div class="container contents">
-    <div id="left">
+<div class="container my-5">
+    <div class="row">
+        <!-- 왼쪽 메뉴 -->
         <link rel="stylesheet" href="/church-homepage/src/html/css/left.css?v0">
-        <ul>
-            <li><a href="church-homepage\src\html\page\church1.html">教会とは</a></li>
-            <li><a href="church-homepage\src\html\page\church2.html">水戸バプテスト教会について</a></li>
-            <li class="on"><a href="church-homepage\src\html\page\church3.html">礼拝・定期集会案内</a></li>
-        </ul>
-    </div>
-    <div id="contents" class="church3">
-        <link rel="stylesheet" href="/church-homepage/src/html/css/contents.css?v0">
-        <article class="ar1">
-            <div class="area">
-                <div class="img"></div>
-                <p>教会はすべての人に開かれています。<br>初めての方でもお気軽にお越し下さい、お待ちしています。</p>
-            </div>
-        </article>
-        <article class="ar2">
-            <div class="title">
-                <div>主日礼拝</div>
-                <p>毎週日曜日</p>
-            </div>
-            <div class="content">
-                <div class="stitle">
-                    <div>子ども礼拝</div>
-                    <p>10時00分～10時20分</p>
-                </div>
-                <div class="scontent">
+        <div id="left" class="col-12 col-md-3 mb-4 mb-md-0">
+            <ul class="list-unstyled d-flex d-md-block flex-wrap gap-2">
+            <li>
+                <a href="/church-homepage/src/html/page/church1.html" class="btn btn-light w-100 text-start">教会とは</a>
+            </li>
+            <li>
+                <a href="/church-homepage/src/html/page/church2.html" class="btn btn-light w-100 text-start">水戸バプテスト教会について</a>
+            </li>
+            <li>
+                <a href="/church-homepage/src/html/page/church3.html" class="btn btn-warning w-100 text-start text-white active">礼拝・定期集会案内</a>
+            </li>
+            </ul>
+        </div>
+
+        <div id="contents" class="church3 col-12 col-md-9">
+            <link rel="stylesheet" href="/church-homepage/src/html/css/contents.css?v0">
+            <article class="ar1">
+                <div class="area">
                     <div class="img"></div>
-                    <div class="txt">
+                    <p>教会はすべての人に開かれています。<br>初めての方でもお気軽にお越し下さい、お待ちしています。</p>
+                </div>
+            </article>
+            <article class="ar2 container my-5">
+                <div class="container my-5">
+                    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-start title-custom">
+                    <h2 class="mb-0 me-2">主日礼拝</h2>
+                    <span class="line mx-2 d-none d-md-inline"></span>
+                    <span class="d-block d-md-inline text-muted">毎週日曜日</span>
+                    </div>
+                </div>
+            
+                <div class="mb-5">
+                <div class="d-flex flex-wrap align-items-center bg-light rounded shadow-sm p-3 mb-3">
+                    <div class="fw-bold me-3">子ども礼拝</div>
+                    <p class="mb-0">10時00分～10時20分</p>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                    <div>
                         <p>0才～12才対象<br>子ども向けの賛美とメッセージの楽しい礼拝です。</p>
                         <p>みんなで声を出して聖句の暗唱もします。</p>
                         <p>小さなお子様はお家のかたと一緒に参加しています。</p>
                     </div>
+                    </div>
+                    <div class="col-md-6">
+                    <img src="/church-homepage/src/images/church03_02.jpg" alt="" class="img-fluid rounded">
+                    </div>
                 </div>
-            </div>
-            <div class="content">
-                <div class="stitle">
-                    <div>第１礼拝</div>
-                    <p>11時10分～12時10分</p>
                 </div>
-                <div class="scontent">
-                    <div class="txt">
+            
+                <div class="mb-5">
+                <div class="d-flex flex-wrap align-items-center bg-light rounded shadow-sm p-3 mb-3">
+                    <div class="fw-bold me-3">第１礼拝</div>
+                    <p class="mb-0">11時10分～12時10分</p>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                    <img src="/church-homepage/src/images/church03_03.jpg" alt="" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-6 mt-4 mb-md-0">
+                    <div>
                         <p>第1、2、4日曜日は比較的静かな雰囲気の中での伝統的礼拝<br>第3日曜日は現代的な賛美を多くする礼拝を行っています。</p>
                     </div>
-                    <div class="img"></div>
-                </div>
-            </div>
-            <div class="content">
-                <div class="stitle">
-                    <div>第２礼拝</div>
-                    <p>19時～20時</p>
-                </div>
-                <div class="scontent">
-                    <div class="img"></div>
-                    <div class="txt">
-                        <p>ドラムやギターの入ったバンドによる奏楽で、賛美する<br>現代的な礼拝です。</p>
                     </div>
                 </div>
-            </div>
-        </article>
-        <article class="ar3">
-            <div class="title">
-                <div>教会学校（全年齢対象）</div>
-                <p>毎週日曜日</p>
-            </div>
-            <div class="content">
-                <div class="stitle">
-                    <div>嬰児・幼児科、小学科</div>
-                    <p>10時20分から10時50分</p>
                 </div>
-                <div class="stitle">
-                    <div>中学科、高校科、成人科</div>
-                    <p>10時～10時50分</p>
+            
+                <div class="mb-5">
+                <div class="d-flex flex-wrap align-items-center bg-light rounded shadow-sm p-3 mb-3">
+                    <div class="fw-bold me-3">第２礼拝</div>
+                    <p class="mb-0">19時～20時</p>
                 </div>
-                <!-- <div class="scontent">
-                    <p></p>
-                </div> -->
-            </div>
-        </article>
-        <article class="ar4">
-            <div class="title">
-                <div>聖書の学びと祈り会</div>
-                <p>毎週水曜日</p>
-            </div>
-            <div class="content">
-                <div class="stitle">
-                    <div>午前の部</div>
-                    <p>10時30分～12時</p>
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                    <div>
+                        <p>ドラムやギターの入ったバンドによる奏楽で、賛美する<br>現代的な礼拝です。</p>
+                    </div>
+                    </div>
+                    <div class="col-md-6">
+                    <img src="/church-homepage/src/images/church03_04_1.jpg" alt="" class="img-fluid rounded">
+                    </div>
                 </div>
-                <div class="stitle">
-                    <div>夜の部</div>
-                    <p>19時～20時</p>
                 </div>
-            </div>
-        </article>
+            </article>
+            
+            <article class="ar3 container my-5">
+                <div class="container my-5">
+                    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-start title-custom">
+                    <h2 class="mb-0 me-2">教会学校（全年齢対象）</h2>
+                    <span class="line mx-2 d-none d-md-inline"></span>
+                    <span class="d-block d-md-inline text-muted">毎週日曜日</span>
+                    </div>
+                </div>
+            
+                <div class="d-flex flex-wrap align-items-center bg-light rounded shadow-sm p-3 mb-2">
+                <div class="fw-bold me-3">嬰児・幼児科、小学科</div>
+                <p class="mb-0">10時20分から10時50分</p>
+                </div>
+                <div class="d-flex flex-wrap align-items-center bg-light rounded shadow-sm p-3 mb-2">
+                <div class="fw-bold me-3">中学科、高校科、成人科</div>
+                <p class="mb-0">10時～10時50分</p>
+                </div>
+            </article>
+            
+            <article class="ar4 container my-5">
+                <div class="container my-5">
+                    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-start title-custom">
+                    <h2 class="mb-0 me-2">聖書の学びと祈り会</h2>
+                    <span class="line mx-2 d-none d-md-inline"></span>
+                    <span class="d-block d-md-inline text-muted">毎週水曜日</span>
+                    </div>
+                </div>
+            
+                <div class="d-flex flex-wrap align-items-center bg-light rounded shadow-sm p-3 mb-2">
+                <div class="fw-bold me-3">午前の部</div>
+                <p class="mb-0">10時30分～12時</p>
+                </div>
+                <div class="d-flex flex-wrap align-items-center bg-light rounded shadow-sm p-3 mb-2">
+                <div class="fw-bold me-3">夜の部</div>
+                <p class="mb-0">19時～20時</p>
+                </div>
+            </article>
+        </div>
     </div>
 </div>
 

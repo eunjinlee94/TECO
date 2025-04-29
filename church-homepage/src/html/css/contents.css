@@ -3,8 +3,6 @@
 }
 
 #contents {
-    width: calc(100% - 400px);
-    float: left;
 }
 
 /*教会とは*/
@@ -73,62 +71,32 @@
     margin-bottom: 0;
 }
 
-.church3 article .title {
-    width: 100%;
-    float: left;
-    display: flex;
-    align-items: center;
+.church3 .title-custom {
     font-family: "Zen Antique Soft", "Noto Sans JP", sans-serif;
-    font-size: 2rem;
+    font-size: calc(1.325rem + .9vw);
     margin-bottom: 1rem;
 }
-
-.church3 article .title div {
-    float: left;
-    padding-right: calc(50px + 1rem);
-    margin-right: 1rem;
-    position: relative;
-}
-
-.church3 article .title div::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-40%);
-    width: 50px;
+  
+.church3 .title-custom .line {
+    width: 5rem;
     height: 1px;
     background: #222;
 }
 
-.church3 article .title p {
-    float: left;
-    margin-bottom: 0;
+@media (min-width: 1200px) {
+    .church3 .title-custom {
+        font-size: 2rem;
+    }
 }
-
-.church3 article .content {
-    margin-bottom: 3rem;
-}
-
-.church3 article .content .stitle {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    border-radius: 0.5rem;
-    background: #e9ecef;
-    padding: 0.5rem 1.5rem;
-    margin: 1rem 0;
-    box-shadow: 0.1rem 0.5rem 1rem #22222210;
-    font-size: 1.2rem;
-}
-
-.church3 article .content .stitle div {
-    margin-right: 1rem;
-    font-weight: 600;
-}
-
-.church3 article .content .stitle p {
-    margin-bottom: 0;
+  
+@media (max-width: 768px) {
+    .church3 .title-custom {
+      flex-direction: column;
+    }
+    .church3 .title-custom .line {
+      display: block !important;
+      margin: 1rem 0 0.5rem 0;
+    }
 }
 
 /*礼拝メッセージ*/

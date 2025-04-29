@@ -1,31 +1,9 @@
-#left {
-    width: 300px;
-    margin-right: 100px;
-    float: left;
-}
-
-#left li {
-    list-style: none;
-}
-
 #left li a {
-    text-decoration: none;
-    box-sizing: border-box;
-    display: block;
-    width: 100%;
-    padding: 0.5rem 1.5rem;
-    border-radius: 0.5rem;
-    background: #e9ecef;
-    margin: 0.4rem 0;
-    color: #222;
-    transition: all .5s ease;
+    margin: 0.2rem 0;
 }
 
-#left li a:hover {
-    background: #ced4da;
-}
-
-#left li.on a {
-    background: #ff922b;
-    color: #fff;
+@media (max-width: 768px) {
+    #left li a {
+      margin: 0;
+    }
 }
