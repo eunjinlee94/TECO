@@ -2,15 +2,13 @@
 import React from "react";
 import "../css/index.css";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendarDays, faEnvelope, faClock, faCircleUser, faBuilding } from '@fortawesome/free-regular-svg-icons';
 
 const links = [
-  { icon: faCalendarDays, text: '礼拝・定期集会案内' },
-  { icon: faEnvelope, text: '礼拝メッセージ' },
-  { icon: faClock, text: '各種教室・活動案内' },
-  { icon: faCircleUser, text: '初めての方へ' },
-  { icon: faBuilding, text: '茨城県にある\nバプテスト教会' }
+  { icon: 'fa-calendar-days', text: '礼拝・定期集会案内' },
+  { icon: 'fa-envelope', text: '礼拝メッセージ' },
+  { icon: 'fa-clock', text: '各種教室・活動案内' },
+  { icon: 'fa-circle-user', text: '初めての方へ' },
+  { icon: 'fa-building', text: '茨城県にある\nバプテスト教会' }
 ];
 
 export default function Index() {
@@ -56,7 +54,7 @@ export default function Index() {
                 <div className="card h-100">
                   <Link to="#" className="text-decoration-none text-dark d-block p-3">
                     <div className="icon mb-2">
-                      <FontAwesomeIcon icon={item.icon} size="2x" />
+                      <i className={`fa-solid ${item.icon} fa-2x`}></i>
                     </div>
                     <div className="text" style={{ whiteSpace: 'pre-line' }}>
                       {item.text}

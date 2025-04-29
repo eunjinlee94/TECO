@@ -1,6 +1,5 @@
 // Header.jsx
 import { Link } from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import "../css/default.css";
 import "../css/header.css"; // ヘッダー用CSS読み込み
 
