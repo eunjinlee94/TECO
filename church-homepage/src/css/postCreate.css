@@ -1,0 +1,25 @@
+/* 폼 전체 스타일 */
+.post-create .form-container {
+    max-width: 800px;
+    margin: 100px auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* 제목 */
+  .post-create .form-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  /* 등록 버튼 */
+  .post-create .btn-submit {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+  }
+  
