@@ -34,10 +34,102 @@
     background: #dee2e6;
 }
 
+/*水戸バプテスト教会について*/
 .church2 {
     font-size: 1.1rem;
 }
 
+/*礼拝・定期集会案内*/
+.church3 article {
+    padding-bottom: 4rem;
+}
+
+.church3 .ar1 .area {
+    width: 100%;
+    padding: 4rem;
+    position: relative;
+    background: #000;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.church3 .ar1 .area .img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background: url('/church-homepage/src/images/church03_01.jpg') no-repeat center 10%;
+    background-size: cover;
+    opacity: 0.4;
+}
+
+.church3 .ar1 .area p {
+    position: relative;
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: "BIZ UDPMincho", "Noto Sans JP", sans-serif;
+    margin-bottom: 0;
+}
+
+.church3 article .title {
+    width: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+    font-family: "Zen Antique Soft", "Noto Sans JP", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.church3 article .title div {
+    float: left;
+    padding-right: calc(50px + 1rem);
+    margin-right: 1rem;
+    position: relative;
+}
+
+.church3 article .title div::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-40%);
+    width: 50px;
+    height: 1px;
+    background: #222;
+}
+
+.church3 article .title p {
+    float: left;
+    margin-bottom: 0;
+}
+
+.church3 article .content {
+    margin-bottom: 3rem;
+}
+
+.church3 article .content .stitle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    background: #e9ecef;
+    padding: 0.5rem 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0.1rem 0.5rem 1rem #22222210;
+    font-size: 1.2rem;
+}
+
+.church3 article .content .stitle div {
+    margin-right: 1rem;
+    font-weight: 600;
+}
+
+.church3 article .content .stitle p {
+    margin-bottom: 0;
+}
 
 /*礼拝メッセージ*/
 .message1 .cards h3 {

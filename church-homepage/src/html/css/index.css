@@ -36,7 +36,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: url('../../images/main01_1.png') no-repeat center;
+    background: url('/church-homepage/src/images/main01_1.png') no-repeat center;
     background-size: cover;
 }
 
@@ -109,7 +109,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('../../images/index_bn01.jpg') no-repeat center;
+    background: url('/church-homepage/src/images/index_bn01.jpg') no-repeat center;
     background-size: cover;
     opacity: 0.5;
 }
