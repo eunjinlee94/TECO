@@ -1,17 +1,28 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Join from './pages/Join';
-import './App.css'; 
+import Login from './pages/Login';
+import Index from './pages/Index';
+import Header from './components/Header';
+import Footer from './components/Footer'; // ★ フッター追加
+import './App.css';
 
 function App() {
   return (
     <BrowserRouter>
+      {/* ヘッダーを常に表示 */}
+      <Header />
+
       <div className="App">
         <Routes>
-          {/* 会員登録ページ */}
+          <Route path="/" element={<Index />} />
           <Route path="/join" element={<Join />} />
-          {/* ここに他のページも追加可能 */}
+          <Route path="/login" element={<Login />} />
+          {/* 他のページもここに追加可能 */}
         </Routes>
       </div>
+
+      {/* フッターを常に表示 */}
+      <Footer />
     </BrowserRouter>
   );
 }
