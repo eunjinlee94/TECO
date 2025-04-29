@@ -30,7 +30,7 @@ const Login = () => {
   };
 
   return (
-    <div className="container">
+    <div className="login container">
       <div className="form-container">
         <div className="form-title">ログイン</div>
         <form onSubmit={handleSubmit}>
@@ -66,11 +66,11 @@ const Login = () => {
           <button type="submit" className="btn btn-primary btn-submit">
             ログイン
           </button>
+          <a className="btn btn-secondary" href="/join">新規登録</a>
 
           <div className="link-group">
             <a href="/find_id">IDを忘れた方</a>
             <a href="/find_pw">パスワードを忘れた方</a>
-            <a href="/join">新規登録</a>
           </div>
         </form>
       </div>
