@@ -33,3 +33,17 @@ body {
     font-size: 0.9rem;
   }
   
+  .login .btn-secondary {
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+}
+
+.login .link-group {
+  margin-top: 20px;
+}
