@@ -1,7 +1,7 @@
 // src/pages/posts/PostList.jsx
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "../../css/postList.css"; // CSS 따로 적용
+import "../../css/postList.css"; 
 
 // 임시 게시글 더미 데이터
 const dummyPosts = Array.from({ length: 23 }, (_, i) => ({
@@ -47,7 +47,12 @@ export default function PostList() {
           {currentPosts.map((post) => (
             <tr key={post.id}>
               <td>{post.id}</td>
-              <td>{post.title}</td>
+              <td>
+                {/* 제목을 누르면 상세페이지 이동 */}
+                <Link to={`/posts/${post.id}`} className="post-title-link">
+                  {post.title}
+                </Link>
+              </td>
               <td>{post.author}</td>
               <td>{post.date}</td>
             </tr>

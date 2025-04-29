@@ -1,0 +1,34 @@
+/* 投稿詳細ページ用のスタイル */
+.post-detail-container {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .post-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .post-meta {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 30px;
+  }
+  
+  .post-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+  }
+  
+  .post-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  

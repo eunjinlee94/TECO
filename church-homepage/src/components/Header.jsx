@@ -30,7 +30,7 @@ function Header() {
                 <Link to="/church1" className="nav-link">教会について</Link>
               </li>
               <li className="nav-item">
-                <Link to="/message" className="nav-link">礼拝メッセージ</Link>
+                <Link to="/posts" className="nav-link">礼拝メッセージ</Link>
               </li>
               <li className="nav-item">
                 <Link to="/news" className="nav-link">教会ニュース</Link>
