@@ -1,30 +1,29 @@
-// src/App.js
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Index from './pages/Index';
 import Join from './pages/Join';
 import Login from './pages/Login';
-import PostCreate from './pages/posts/PostCreate';  
-import PostList from './pages/posts/PostList';
+import Index from './pages/Index';
+import Church1 from './pages/Church1';
 import Header from './components/Header';
-import Footer from './components/Footer';
+import Footer from './components/Footer'; // ★ フッター追加
 import './App.css';
 
 function App() {
   return (
     <BrowserRouter>
+      {/* ヘッダーを常に表示 */}
       <Header />
-      <Routes>
-        {/* インデックスページ */}
-        <Route path="/" element={<Index />} />
-        {/* 会員登録ページ */}
-        <Route path="/join" element={<Join />} />
-        {/* ログインページ */}
-        <Route path="/login" element={<Login />} />
-        {/* 投稿作成ページ */}
-        <Route path="/postCreate" element={<PostCreate />} />
-        {/* 投稿リストページ */}
-        <Route path="/posts" element={<PostList />} /> 
-      </Routes>
+
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/join" element={<Join />} />
+          <Route path="/login" element={<Login />} />
+          {/* 他のページもここに追加可能 */}
+          <Route path="/church1" element={<Church1 />} />
+        </Routes>
+      </div>
+
+      {/* フッターを常に表示 */}
       <Footer />
     </BrowserRouter>
   );
