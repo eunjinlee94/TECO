@@ -21,6 +21,10 @@
     transition: all .5s ease;
 }
 
+#left li a:hover {
+    background: #ced4da;
+}
+
 #left li.on a {
     background: #ff922b;
     color: #fff;

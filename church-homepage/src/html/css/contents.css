@@ -37,3 +37,28 @@
 .church2 {
     font-size: 1.1rem;
 }
+
+
+/*礼拝メッセージ*/
+.message1 .cards h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.message1 .card-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.message1.detail .line {
+    width: 100%;
+    height: 1px;
+    background: #e9ecef;
+    margin-bottom: 2rem;
+}
