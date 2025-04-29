@@ -2,6 +2,16 @@
 import React from "react";
 import "../css/index.css";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCalendarDays, faEnvelope, faClock, faCircleUser, faBuilding } from '@fortawesome/free-regular-svg-icons';
+
+const links = [
+  { icon: faCalendarDays, text: '礼拝・定期集会案内' },
+  { icon: faEnvelope, text: '礼拝メッセージ' },
+  { icon: faClock, text: '各種教室・活動案内' },
+  { icon: faCircleUser, text: '初めての方へ' },
+  { icon: faBuilding, text: '茨城県にある\nバプテスト教会' }
+];
 
 export default function Index() {
   return (
@@ -40,22 +50,17 @@ export default function Index() {
       {/* クイックリンク */}
       <section className="py-5">
         <div className="container">
-          <div className="cards row text-center justify-content-center quick-links">
-            {/* 카드들 */}
-            {[
-              { icon: "calendar-days", text: "礼拝・定期集会案内" },
-              { icon: "envelope", text: "礼拝メッセージ" },
-              { icon: "clock", text: "各種教室・活動案内" },
-              { icon: "circle-user", text: "初めての方へ" },
-              { icon: "building", text: "茨城県にあるバプテスト教会" },
-            ].map((item, idx) => (
-              <div key={idx} className="col-md-2 col-sm-4 mb-4">
-                <div className="card">
-                  <Link to="#">
-                    <div className="icon">
-                      <i className={`fa-regular fa-${item.icon}`}></i>
+          <div className="row text-center justify-content-center quick-links">
+            {links.map((item, idx) => (
+              <div key={idx} className="cards col-md-2 col-sm-4 mb-4">
+                <div className="card h-100">
+                  <Link to="#" className="text-decoration-none text-dark d-block p-3">
+                    <div className="icon mb-2">
+                      <FontAwesomeIcon icon={item.icon} size="2x" />
                     </div>
-                    <div className="text">{item.text}</div>
+                    <div className="text" style={{ whiteSpace: 'pre-line' }}>
+                      {item.text}
+                    </div>
                   </Link>
                 </div>
               </div>
@@ -66,10 +71,9 @@ export default function Index() {
 
       {/* バナーセクション */}
       <section
-        className="index-bn"
-        style={{ backgroundImage: `url("/index_bn01.jpg")` }}
-      >
+        className="index-bn">
         <div className="container">
+          <div className="img"></div>
           <p>
             毎週日曜日の主日第一礼拝（11:10～12:10）、第二礼拝（19:00～20:00）については、
             <br />

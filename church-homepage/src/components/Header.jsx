@@ -1,5 +1,7 @@
 // Header.jsx
 import { Link } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "../css/default.css";
 import "../css/header.css"; // ヘッダー用CSS読み込み
 
 function Header() {
@@ -26,7 +28,7 @@ function Header() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto me-3">
               <li className="nav-item">
-                <Link to="/church" className="nav-link">教会について</Link>
+                <Link to="/church1" className="nav-link">教会について</Link>
               </li>
               <li className="nav-item">
                 <Link to="/message" className="nav-link">礼拝メッセージ</Link>

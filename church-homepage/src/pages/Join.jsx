@@ -99,7 +99,7 @@ function Join() {
   };
 
   return (
-    <div className="container">
+    <div className="join container">
       <div className="form-container">
         <div className="form-title">会員登録</div>
         <form onSubmit={handleSubmit} className="form-grid">
