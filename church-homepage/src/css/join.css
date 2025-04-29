@@ -3,6 +3,10 @@
   margin: 0 auto;
 }
 
+.join .form-container {
+  max-width: 100%;
+}
+
 .form-container {
   background-color: #fff;
   padding: 40px;

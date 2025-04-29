@@ -68,7 +68,7 @@ const Login = () => {
           </button>
           <a className="btn btn-secondary" href="/join">新規登録</a>
 
-          <div className="link-group mt-2">
+          <div className="link-group">
             <a href="/find_id">IDを忘れた方</a>
             <a href="/find_pw">パスワードを忘れた方</a>
           </div>
